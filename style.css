@@ -1,0 +1,438 @@
+body {
+  height: 95%;
+  margin:0;
+  padding: 0;  
+}
+
+html{
+  scroll-behavior: smooth;
+  background:#ffeacc;
+}
+
+/* ========================================================================= */
+
+#pic-header1 {
+  position: absolute;
+  z-index: 1;
+  top: 22%;
+  left: 34%;
+  font-family: Didot, serif;
+  /*font-size: 125px;*/
+  font-size: 8vw;
+  color: whitesmoke;
+  height: auto;
+  max-width: 100%;
+  text-shadow: 2px 2px 8px black;
+}
+
+#pic-header2 {
+  position: absolute;
+  z-index: 1;
+  top: 22%;
+  left: 50%;
+  font-family: Didot, serif;
+  /*font-size: 125px;*/
+  font-size: 8vw;
+  color: whitesmoke;
+  height: auto;
+  max-width: 100%;
+  text-shadow: 2px 2px 8px black;
+}
+
+#pic-header3{
+  position: absolute;
+  z-index: 1;
+  top: 22%;
+  left: 50%;
+  font-family: Didot, serif;
+  /*font-size: 125px;*/
+  font-size: 8vw;
+  color: whitesmoke;
+  height: auto;
+  max-width: 100%;
+  text-shadow: 2px 2px 8px black;
+}
+
+#pic-header4 {
+  position: absolute;
+  z-index: 1;
+  top: 22%;
+  left: 34%;
+  font-family: Didot, serif;
+  /*font-size: 125px;*/
+  font-size: 8vw;
+  color: whitesmoke;
+  height: auto;
+  max-width: 100%;
+  text-shadow: 2px 2px 8px black;
+}
+
+/* ========================================================================= */
+/* navigation bar */
+ 
+.nav {
+  background-color: #e3c59a;
+  /*overflow: hidden;*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  font-family: Optima, sans-serif;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: rgb(66, 40, 3);
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.nav a.active {
+  background-color: #ba9c70;
+  color: white;
+}
+
+.nav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn{
+  font-size: 17px; 
+  border: none;
+  outline: none;
+  color: rgb(66, 40, 3);
+  padding: 15px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e3c59a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 3rem;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav a:hover, .dropdown:hover {
+    background-color: #ba9c70;
+    color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #ba9c70;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child), .dropdown {
+    display: none;
+  }
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav.responsive {
+    position: fixed;
+  }
+  .nav.responsive a.icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .nav.responsive .dropdown {
+    float: none;
+  }
+  .nav.responsive .dropdown-content {position: fixed;}
+  .nav.responsive .dropdown {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* ENDS HERE BABY */
+/* End nav bar */
+/* ========================================================================= */
+
+
+@media screen and (max-width: 600px) {
+  #artstat-last {
+    font-size: 17px;
+  }
+  #greeting {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .parallax1 {
+      background-attachment: scroll;
+  }
+  #imgs {
+    height: 100%;
+    width: 100%;
+  }
+  .rowflex {
+    display: table;
+  }
+}
+
+/* ========================================================================= */
+
+h1 {
+  font-family: Didot, serif;
+  font-weight: bold;
+}
+
+hr {
+  border: 0;
+  height: 3px;
+  width: 90%;
+  background-image: linear-gradient(to right, rgba(66, 40, 3,0.1), rgba(66, 40, 3,0.7), rgba(66, 40, 3,0.1));
+}
+
+/* Greeting appearance */
+#greeting {
+  color: rgb(66, 40, 3);
+  text-align: center;
+  font-size: 4em;
+}
+
+#contact-section {
+  width: 100%;
+  height: fit-content;
+  background-color: #ba9c70;
+}
+
+/* artist statement */
+#artist-stat {
+  text-align: center;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 2.75em;
+}
+
+#artstat-last {
+  text-align: center;
+  padding-left: 70px;
+  padding-right: 70px; 
+  font-size: 2em;
+}
+
+#worknav {
+  display: inline;
+}
+
+#worknav a {
+  color: rgb(66, 40, 3);
+  text-decoration: none;
+  cursor: pointer;
+}
+ 
+#worknav a:hover {
+  color: rgb(138, 85, 11);
+  font-size: 16pt;
+}
+
+#worknav a.active {
+  color: rgb(66, 40, 3);
+}
+
+#work-intro {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+#blurb {
+  padding-left: 20%;
+  padding-right: 20%;
+  line-height: 20px;
+  text-align: center;
+}
+
+#clickable {
+  cursor: pointer;
+}
+
+#profile-pic {
+  width: 50%;
+}
+
+.website-navigator {
+  height: calc(fit-content + 50px);
+  position: relative;
+  font-family: Optima, sans-serif;
+  color: rgb(66, 40, 3);
+  width: 100%;
+}
+
+.rowflex {
+  display: flex;
+}
+
+/* ========================================================================= */
+
+/* IMAGE STLYING */
+
+#imgs {
+  height: 80%;
+  width: 80%;
+}
+#project-img {
+  height: 40%;
+  width: 40%;
+}
+
+video {
+  width: 100%;
+  min-height: 480px;
+  height: calc((9 / 16) * 100vw);
+  max-height: calc(100vh - 169px);
+}
+
+/* END IMAGE STYLING */
+
+/* ========================================================================= */
+
+/* creates columns */
+.row {
+  display: table;
+}
+
+.column {
+  flex: 50%;
+}
+
+/*GOOD CODE DOWN HERE*/
+
+h1 a {
+  color: rgb(66, 40, 3);
+  text-decoration: none;
+  cursor: pointer;
+}
+ 
+h1 a:hover {
+  color: rgb(138, 85, 11);
+  font-size: 16pt;
+}
+
+h1 a.active {
+  color: rgb(66, 40, 3);
+}
+
+/* contact section */
+
+h3 a {
+  color: rgb(66, 40, 3);
+  text-decoration: none;
+  cursor: pointer;
+}
+ 
+h3 a:hover {
+  color: rgb(138, 85, 11);
+}
+
+h3 a.active {
+  color: rgb(66, 40, 3);
+}
+
+/* ========================================================================= */
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.section-picture {
+  position: relative;
+  height: fit-content;
+  font-family: Optima, sans-serif;
+  color: rgb(66, 40, 3);
+  width: 100%;
+}
+
+.section {
+  position: relative;
+  height: 100%;
+  font-family: Optima, sans-serif;
+  color: rgb(66, 40, 3);
+}
+
+.parallax::after { 
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+  height:100%;
+  margin-top: 0%;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100% !important;
+}
+
+/* ========================================================================= */
+
+.static {
+  background:#ffeacc;
+}
+
+/* Sets background images */
+.bg1::after {
+  background-image: url('imgs/homee.jpg');
+}
+
+.bg2::after {
+  background-image: url('imgs/works.jpg');
+}
+
+.bg3::after {
+  background-image: url('imgs/about.jpg');
+}
+
+.bg4::after {
+  background-image: url('imgs/contact.jpg');
+}
