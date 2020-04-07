@@ -150,7 +150,7 @@ html{
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .nav a:not(:first-child), .dropdown {
     display: none;
   }
@@ -160,7 +160,7 @@ html{
   }
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .nav.responsive {
     position: fixed;
   }
@@ -190,14 +190,52 @@ html{
 /* ========================================================================= */
 
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+  #artist-stat{
+    font-size: 17px;
+  }
   #artstat-last {
     font-size: 17px;
   }
   #greeting {
-    font-size: 25px;
+    font-size: 2em;
+  }
+  #mobile-profile{
+    padding-top: 10px;
+  }
+  .rowflex{
+    display: block;
+  }
+  #blurb-o {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 12px;
+    line-height: 15px;
   }
 }
+@media only screen and (min-width: 601px) {
+  #artist-stat{
+    font-size: 2.75em;
+  }
+  #artstat-last {
+    font-size: 2em;
+  }
+  #greeting {
+    font-size: 4em;
+  }
+  #mobile-profile{
+    padding-top: 100px;
+  }
+  .rowflex{
+    display: flex;
+  }
+  #blurb-o {
+    padding-left: 20%;
+    padding-right: 20%;
+    line-height: 25px;
+  }
+}
+
 
 @media only screen and (max-width: 1024px) {
   .parallax1 {
@@ -206,9 +244,6 @@ html{
   #imgs {
     height: 100%;
     width: 100%;
-  }
-  .rowflex {
-    display: table;
   }
 }
 
@@ -230,7 +265,6 @@ hr {
 #greeting {
   color: rgb(66, 40, 3);
   text-align: center;
-  font-size: 4em;
 }
 
 #contact-section {
@@ -244,14 +278,12 @@ hr {
   text-align: center;
   padding-left: 70px;
   padding-right: 70px;
-  font-size: 2.75em;
 }
 
 #artstat-last {
   text-align: center;
   padding-left: 70px;
   padding-right: 70px; 
-  font-size: 2em;
 }
 
 #worknav {
@@ -280,10 +312,10 @@ hr {
 }
 
 #blurb {
+  text-align: center;
   padding-left: 20%;
   padding-right: 20%;
   line-height: 20px;
-  text-align: center;
 }
 
 #clickable {
@@ -302,9 +334,9 @@ hr {
   width: 100%;
 }
 
-.rowflex {
-  display: flex;
-}
+/* .rowflex {
+  display: table;
+} */
 
 /* ========================================================================= */
 
