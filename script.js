@@ -4,7 +4,7 @@ $(document).ready(function () {
     var greeting;
   
     /*creates greeting message based on time of day*/
-    if (hourNow > 18) {
+    if (hourNow > 17) {
       greeting = "Good evening.";
     } else if (hourNow > 12) {
       greeting = "Good afternoon.";
