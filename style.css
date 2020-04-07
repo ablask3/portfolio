@@ -210,7 +210,6 @@ html{
     padding-left: 5%;
     padding-right: 5%;
     font-size: 12px;
-    line-height: 15px;
   }
 }
 @media only screen and (min-width: 601px) {
@@ -224,7 +223,7 @@ html{
     font-size: 4em;
   }
   #mobile-profile{
-    padding-top: 100px;
+    padding-top: 8%;
   }
   .rowflex{
     display: flex;
@@ -232,7 +231,6 @@ html{
   #blurb-o {
     padding-left: 20%;
     padding-right: 20%;
-    line-height: 25px;
   }
 }
 
@@ -333,10 +331,6 @@ hr {
   color: rgb(66, 40, 3);
   width: 100%;
 }
-
-/* .rowflex {
-  display: table;
-} */
 
 /* ========================================================================= */
 
